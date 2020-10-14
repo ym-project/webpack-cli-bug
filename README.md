@@ -1,6 +1,6 @@
 ## webpack-cli-bug
 
-In node.js 13.6 you can catch an error.
+In node.js 13.0-13.6 you can catch an error:
 ```sh
 Error: No valid exports main found for '/node_modules/colorette'
     at resolveExportsTarget (internal/modules/cjs/loader.js:625:9)
@@ -15,6 +15,8 @@ Error: No valid exports main found for '/node_modules/colorette'
     at Module._compile (/node_modules/v8-compile-cache/v8-compile-cache.js:194:30) {
   code: 'MODULE_NOT_FOUND'
 ```
+
+It happens with any package that has ESM support in package.json.
 
 ## Usage
 1. `docker build -t webpack-test .` - build image

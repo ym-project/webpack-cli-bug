@@ -18,6 +18,12 @@ Error: No valid exports main found for '/node_modules/colorette'
 
 It happens with any package that has ESM support in package.json.
 
-## Usage
+## Reproduce
+
+### Manual
+1. `npm i` - install dependencies
+2. `npm run build` - run webpack
+
+### Via docker
 1. `docker build -t webpack-test .` - build image
 2. `docker run --name webpack-test --rm webpack-test` - run webpack

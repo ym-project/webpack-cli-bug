@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-  	"build": "webpack"
+    "build": "webpack"
   },
   "devDependencies": {
     "webpack": "^5.1.0",
